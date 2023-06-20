@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-x%(3-c!%v3u0r-a5!4*=yo(wfhct-k=irfd@toim6%95=9nq^3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'cliente.apps.ClienteConfig',
     'formulario.apps.FormularioConfig',
 ]
+
+CSRF_TRUSTED_ORIGINS = ['https://proyectofinaldjangorailway-production.up.railway.app']
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
