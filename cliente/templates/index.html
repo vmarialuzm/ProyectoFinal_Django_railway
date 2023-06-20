@@ -1,0 +1,215 @@
+{% extends "basecliente.html" %}
+
+{% block content %} 
+{% load static %}
+
+<!-- ======= Header ======= -->
+<header id="header">
+    <div class="container">
+
+      <h1><a href="{% url 'index' %}">Luz Maria Vivanco Merino</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+      <h2>Backend developer Jr. apasionada por la tecnologia y la programación</h2>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link active" href="#header">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#resume">Resume</a></li>
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="social-links">
+        <a href="https://twitter.com/LuzMaraViv69840" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100077444120793" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/luzmv0318/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/luz-maria-vivanco-merino/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+
+    <!-- ======= About Me ======= -->
+    <div class="about-me container">
+
+      <div class="section-title">
+        <h2>About</h2>
+        <p>Sobre mí</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <img src="{% static 'assets/img/me1.jpg' %}" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>
+            Backend developer
+          </h3>
+          <p class="fst-italic">
+            Hola! soy Luz, 
+            Backend Developer Jr. con manejo de frameworks como flask y django y bases de datos relaciones y no relacionales. 
+            Me gusta estar actualizada con las últimas tendencias y novedades en la tecnología, desarrollando proyectos innovadores.
+            Formada profesionalmente en Ingenieria Industrial con 2 años de experiencia en Recursos Humanos.
+            Me encanta trabajar en equipo con proactividad, creatividad y resolución de problemas eficientemente.
+            Mi objetivo final es utilizar mis conocimientos para crear soluciones a problemas reales.
+            Pila tecnológica:
+          </p>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Python</strong></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Flask</strong></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Django</strong></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>MongoDB</strong></li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>MySQL</strong></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>HTML</strong></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>CSS</strong></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>JavaScript</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- End About Me -->
+  </section><!-- End About Section -->
+
+  <!-- ======= Resume Section ======= -->
+  <section id="resume" class="resume">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Resume</h2>
+        <p>Revisa mi CV</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="resume-title">Resumen</h3>
+          <div class="resume-item">
+            <h4>Idiomas</h4>
+            <p>
+            <ul>
+              <li>Inglés - Intermedio</li>
+              <li>Español - Nativo</li>
+            </ul>
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4>Contacto</h4>
+            <p>
+            <ul>
+              <li>(+51) 947238341</li>
+              <li>vmarialuzm@gmail.com</li>
+              <li>https://github.com/vmarialuzm</li>
+            </ul>
+            </p>
+          </div>
+
+          <h3 class="resume-title">Educación</h3>
+          <div class="resume-item">
+            <h4>Backend developer, Desarrollo de aplicaciones web</h4>
+            <h5>2022 - 2023</h5>
+            <p><em>SILABUZ y MTPE</em></p>
+            <p>Bootcamp de formación en el área Backend obtenido por beca pública del Ministerio de Trabajo y Promoción del Empleo del Perú (2022) en conjunto con Silabuz.</p>
+            <p><strong>Aptitudes:</strong> Python, Flask, Django, MySQL, mongoDB, HTML, CSS</p>
+          </div>
+          <div class="resume-item">
+            <h4>Egresada de Ingeniería Industrial</h4>
+            <h5>2015 - 2021</h5>
+            <p><em>UNIVERSIDAD NACIONAL FEDERICO VILLARREAL</em></p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="resume-title">Experiencia Profesional</h3>
+          <div class="resume-item">
+            <h4>PRACTICANTE DE COMPENSACIONES</h4>
+            <h5>NOVIEMBRE 2021 - AGOSTO 2022</h5>
+            <p><em>TUPEMESA</em></p>
+            <p>
+            <ul>
+              <li>Brindar apoyo en la elaboración de reportes, indicadores y presantaciones de la SubGerencia.</li>
+              <li>Brindar soporte operativo en el proyecto de implementación de SAP HCM.</li>
+              <li>Apoyar en la valorización de puestos y actualización del Job Mapping.</li>
+              <li>Mantener actualizada la base de dotación y los organigramas de la empresa.</li>
+              <li>Apoyar en la planificación y seguimiento de la Evaluación de Desempeño y los descriptivos de puestos.</li>
+            </ul>
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4>ASISTENTE DE RRHH</h4>
+            <h5>FEBRERO 2021 - NOVIEMBRE 2021</h5>
+            <p><em>GRUPO SISCOG SAC</em></p>
+            <p>
+            <ul>
+              <li>Reclutar y seleccionar al personal.</li>
+              <li>Solicitar programación de pruebas Covid, EMO y otros exámenes médicos.</li>
+              <li>Gestionar la emisión de constancia de SCTR y Seguro Vida Ley.</li>
+              <li>Realizar el armado de files del contratado.</li>
+              <li>Elaborar procedimientos y flujogramas de RRHH.</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Resume Section -->
+
+
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Portfolio</h2>
+        <p>Mis Proyectos</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-card">Card</li>
+            <li data-filter=".filter-web">Web</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container">
+
+        {% for proyecto in proyectos %}
+        
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="{{ proyecto.foto }}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>{{ proyecto.titulo_proyecto }}</h4>
+              <p>Web</p>
+              <div class="portfolio-links">
+                <a href="{{ proyecto.foto }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="/portfolio-details/{{ proyecto.id }}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {% endfor %}
+       
+      </div>
+
+    </div>
+  </section><!-- End Portfolio Section -->
+
+{% endblock content %}
