@@ -90,7 +90,7 @@ WSGI_APPLICATION = 'portafolio.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='mysql://root:990122754Luz@127.0.0.1:3306/portafolio',
+        default='sqlite:///db.sqlite3',
         conn_max_age=600
     )
 }
