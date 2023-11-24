@@ -31,7 +31,6 @@ https://djangoportfolio-xw0g.onrender.com/
 ### Para crear un usuario
 
 https://djangoportfolio-xw0g.onrender.com/register/
-https://djangoportfolio-xw0g.onrender.com/accounts/login/
 
 ### Para añadir un proyecto a mi portafolio
 
